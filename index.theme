@@ -1,0 +1,6 @@
+[theme]
+name=Y-Combinator
+description= (Y F) = (F (Y F))
+engine=lightdm-webkit-greeter
+url=index.html
+session=

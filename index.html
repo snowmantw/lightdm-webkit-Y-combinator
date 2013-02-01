@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+<style type="text/css">
+body
+{
+    /*background-image: url('bg.jpg');*/
+    background-color: #333;
+}
+
+td
+{
+    font-size: 20px;
+    color: white;
+    verical-align: middle;
+}
+
+#message
+{
+    color: white;
+}
+
+#message p
+{
+    margin-top:0.5em;
+    margin-bottom:0em;
+}
+
+#username
+{
+    background: none;
+    border-bottom: 2px white solid;
+    border-width: 0 0 2px 0; 
+    color: white;
+    outline:none;
+    font-size: 20pt;
+    width: 10em;
+}
+
+#password
+{
+    background: none;
+    border-bottom: 2px white solid;
+    border-width: 0 0 2px 0; 
+    color: white;
+    margin-left:6px;
+    outline:none;
+    font-size: 20pt;
+    width: 10em;
+}
+
+aside
+{
+    position:fixed;
+    left:53%;
+/*  top: 105px;*/
+    width:830px;
+}
+
+#ycombinators
+{
+    color: white;
+    letter-spacing: 6px;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    white-space:nowrap;
+}
+
+#ycombinators div.line:first-of-type
+{
+    margin-left: 0px;
+    margin-bottom: -26px;
+}
+
+#ycombinators .line
+{
+    margin-left: 86px;
+    margin-bottom:12px;
+}
+
+</style>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="underscore-min.js"></script>
+<script type="text/javascript" src="theme.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $("#ycombinators .line").hide()
+    $("#ycombinators .line").eq(0).show()
+    setInput()
+    Ycountdown()
+})
+</script>
+</head>
+
+<body>
+
+    <header>
+    <div id="login">
+        <input id="username" type="text"/>
+        <input id="password" type="password" />
+
+    </div>
+    </header>
+
+    <section>
+    <div id="message">
+    
+    </div>
+    </section>
+
+    <aside>
+    <div id="ycombinators">
+        <div class="line"><span style="font-size:140pt">λ</span>.f.(λx.f (x x)) (λx.f (x x)) g</div>
+        <div class="line">= (λx . g (x x)) (λx . g (x x))</div>
+        <div class="line">= g ( (λx . g (x x)) (λx . g (x x)))</div>
+        <div class="line">= g ( g ( (λx . g (x x)) (λx . g (x x)))) </div>
+        <div class="line">= g ( g ( g ( (λx . g (x x)) (λx . g (x x)))))  </div>
+        <div class="line">= g ( g ( g ( g ( (λx . g (x x)) (λx . g (x x))))))  </div>
+        <div class="line">= g ( g ( g ( g ( g ( (λx . g (x x)) (λx . g (x x))))))) </div>
+        <div class="line">= g ( g ( g ( g ( g ( g ( (λx . g (x x)) (λx . g (x x)))))))) </div>
+        <div class="line">= g ( g ( g ( g ( g ( g ( g ( (λx . g (x x)) (λx . g (x x)))))))))</div>
+        <div class="line">= g ( g ( g ( g ( g ( g ( g ( g ( (λx . g (x x)) (λx . g (x x))))))))))</div>
+        <div class="line">= g ( g ( g ( g ( g ( g ( g ( g ( g ( (λx . g (x x)) (λx . g (x x)))))))))))</div>
+        <div class="line">= g ( g ( g ( g ( g ( g ( g ( g ( g ( g ( (λx . g (x x)) (λx . g (x x))))))))))))</div>
+        <div class="line">= g ( g ( g ( g ( g ( g ( g ( g ( g ( g ( g ( (λx . g (x x)) (λx . g (x x)))))))))))))</div>
+        <div class="line">= g ( g ( g ( g ( g ( g ( g ( g ( g ( g ( g ( g ( (λx . g (x x)) (λx . g (x x))))))))))))))</div>
+        <div class="line">= g ( g ( g ( g ( g ( g ( g ( g ( g ( g ( g ( g ( g ( (λx . g (x x)) (λx . g (x x)))))))))))))))</div>
+        <div class="line">= g ...  g ( Y g )</div>
+    </div>
+    <aside>
+</body>
+
+</html>
