@@ -4,7 +4,7 @@ Because `slim` was sunk, and desktop HTML applications rocks.
 
 ## Screenshot
 
-![Y-combinator-screenshot]()
+![Y-combinator-screenshot](https://raw.github.com/snowmantw/lightdm-webkit-Y-combinator/master/lightdm-webkit-Y-combinator.gif)
 
 The progress will automatically expand ( **animated** ).
 Unfortunately, I didn't finish the real evaluating function.
