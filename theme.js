@@ -62,7 +62,7 @@ function setInput()
 
 function showMessage(text)
 {
-    $('#message').append("<p>"+text+"</p>")
+    $('#message').prepend("<p>"+text+"</p>")
 }
 
 // Default callbakc function
